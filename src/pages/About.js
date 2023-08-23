@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { useLocation } from "react-router-dom";
+// import { withReactRouterProps } from './withReactRouterPropsOld';
+import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
 
 export const  withLocation = (Component) => {
     return props => <Component {...props} location={useLocation()} />;
@@ -14,7 +16,9 @@ class About extends Component {
 
   render() {
     return (
-      <div>
+      <div onClick={()=>{
+        this.props.navigate('/contact', {state: this.props?.location?.state});
+      }}>
         <h2>About Page</h2>
         <p>This is the about page.</p>
       </div>
@@ -22,5 +26,5 @@ class About extends Component {
   }
 }
 
-export default withLocation(About);
+export default withReactRouterProps(About);
 // export default About;

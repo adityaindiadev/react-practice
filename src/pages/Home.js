@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { ReactRouterVersion } from '../Constants';
+import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
+// import { withReactRouterProps } from './withReactRouterPropsOld';
+
 const DATA = {
     name: "Aditya",
     address: {
@@ -24,7 +27,7 @@ class Home extends Component {
     };
 
     navigateToAboutForV6 = () => {
-        this.props.navigate('/about', {state: {...DATA}});
+        this.props.navigate('/about', { state: { ...DATA } });
     };
 
     navigateToAbout = () => {
@@ -55,5 +58,5 @@ class Home extends Component {
     }
 }
 
-export default withNavigation(Home);
+export default withReactRouterProps(Home);
 // export default Home;

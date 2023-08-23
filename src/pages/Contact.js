@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
+// import { withReactRouterProps } from './withReactRouterPropsOld';
+// import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
 
 class Contact extends Component {
+
+  componentDidMount() {
+    console.log('props', this.props);
+    console.log("data", this.props?.location?.state);
+}
+
   render() {
     return (
       <div>
@@ -11,4 +20,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withReactRouterProps(Contact);
