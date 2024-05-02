@@ -19,8 +19,8 @@ class App extends Component {
     // let obj = {"name": "Aditya", "address" : { "city": "Delhi", "country": "india" }}
     return (
       <div className="App">
-      <BrowserRouter>
-        
+        <BrowserRouter>
+
           {/* <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -28,12 +28,12 @@ class App extends Component {
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav> */}
-          
+
           {/* <NavigationForV5/> */}
 
-          <NavigationForV6/>
-        
-      </BrowserRouter>
+          <NavigationForV6 />
+
+        </BrowserRouter>
       </div>
     );
   }
