@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TransferListMain from './pages/modules/TransferList/TransferListMain';
+import Comments from './pages/modules/Comments/Comments';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
       <App />
     </React.StrictMode> */}
 
-    <TransferListMain/>
+    {/* <TransferListMain/> */}
+
+    <Comments/>
 
   </>
 );
