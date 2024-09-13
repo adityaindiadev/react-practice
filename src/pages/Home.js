@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { ReactRouterVersion } from '../Constants';
-import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
+import { withReactRouterProps } from 'react-router-v6-class-props';
 // import { withReactRouterProps } from './withReactRouterPropsOld';
 
 const DATA = {
