@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TransferListMain from './pages/modules/TransferList/TransferListMain';
 import Comments from './pages/modules/Comments/Comments';
+import Pagination from './pages/Pagination';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,8 +16,8 @@ root.render(
 
     {/* <TransferListMain/> */}
 
-    <Comments/>
-
+    {/* <Comments/> */}
+<Pagination/>
   </>
 );
 
