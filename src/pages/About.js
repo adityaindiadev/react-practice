@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { useLocation } from "react-router-dom";
 // import { withReactRouterProps } from './withReactRouterPropsOld';
-import { withReactRouterProps } from '@adityaindiadev/react-router-v6-class-props';
+import { withReactRouterProps } from 'react-router-v6-class-props';
 
 export const  withLocation = (Component) => {
     return props => <Component {...props} location={useLocation()} />;
